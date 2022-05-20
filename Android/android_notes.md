@@ -1,96 +1,8 @@
 # ∆ndroid
 
-[https://towardsdatascience.com/top-10-libraries-every-java-developer-should-know-37dd136dff54](https://towardsdatascience.com/top-10-libraries-every-java-developer-should-know-37dd136dff54)
 
-- How to fix “nonsenical errors” Problem in IDE after import new Project?
-    
-    file > invalidate caches and restart
-    
-    - + rebuild project
-- where to add launch configurations in intelliJ ?
-    
-    → these are options and arguments added to the main method’s args (as in main(string[] args)
-    
-    Go to: 
-    
-    run > Debug Configuration   
-    
-    → VM args need to be selected seperately
-    
-- where are the artifacts managed by maven stored?
-    
-    `.m2` folder is the default folder used by maven to store its:
-    
-    - `settings.xml` file which specifies properties, like the central repository to download your dependencies, the location of the so-called `localRepository`
-    - by default, the `localRepository` in which maven stores all the dependencies your project might need to run.
-- ***JUnit Jupiter***
-    
-    **Unit Jupiter**
-     is the combination of the new [programming model](https://junit.org/junit5/docs/current/user-guide/#writing-tests)
-     and [extension model](https://junit.org/junit5/docs/current/user-guide/#extensions)
-     for writing tests and extensions in JUnit 5. The Jupiter sub-project provides a `TestEngine`
-     for running Jupiter based tests on the platform.
-    
-- IRC
-    
-    > `Internet Relay Chat (IRC) is a protocol for live interactive Internet text messaging (chat) or synchronous conferencing. It is mainly designed for group communication in discussion forums, called channels, but also allows one-to-one communication via private message as well as chat and data transfer, including file sharing.`
-    > 
-    
-    [Every Programmer should use IRC](https://www.fizerkhan.com/blog/posts/every-programmer-should-use-irc)
-    
-- PMD
-    
-    Simply put, PMD is **a source code analyzer to find common programming flaws like unused variables, empty catch blocks, unnecessary object creation, and so forth**. It supports Java, JavaScript, Salesforce.com Apex, PLSQL, Apache Velocity, XML, XSL.
-    
 
-- git - merge branch into master
-    
-    If you want to merge your branch to master on remote, follow the below steps:
-    
-    1. push your branch say 'br-1' to remote using `git push origin br-1`.
-    2. switch to master branch on your local repository using `git checkout master`.
-    3. update local master with remote master using `git pull origin master`.
-    4. merge br-1 into local master using `git merge br-1`. This may give you conflicts which need to be resolved and changes committed before moving further.
-    5. Once merge of br-1 to master on local is committed, push local master to remote master using `git push origin master`.
-- git - add file to commit after git commit
-    
-    ```
-    # edited file-that-i-remember.txt
-    git add file-that-i-remember.txt
-    git commit
-    
-    # realize you forgot a file
-    git add file-that-i-forgot.txt
-    git commit --amend --no-edit
-    ```
-    
-- git push
-- git - revert changes to last commit
-    
-    This will undo any changes you've made to tracked files and restore deleted files:
-    
-    `git reset HEAD --hard`   (head am Ende?)
-    
-- Taenzer Tipp - how to merge changes
-    
-    create new local branch
-    merge remote master into new local - see if worked
-    if so - merge that back into remote master
-    
-
-git clone (beim ersten Mal)
-
-git checkout -b branchName //neuer lokaler branch 
-
-// make changes 
-
-git add —all 
-
-git commit -m “message” 
-
-git push origin branchName  
-
-Android
+## Android
 
 - Check if App has been restored
     
@@ -616,3 +528,92 @@ android_∫:
         `==` compares object references, it checks to see if the two operands point to the same object (not *equivalent* objects, the **same** object).
         
     - Diff. Methode überladen vs. Methode überschreiben
+    
+    
+    - How to fix “nonsenical errors” Problem in IDE after import new Project?
+    
+    file > invalidate caches and restart
+    
+    - + rebuild project
+- where to add launch configurations in intelliJ ?
+    
+    → these are options and arguments added to the main method’s args (as in main(string[] args)
+    
+    Go to: 
+    
+    run > Debug Configuration   
+    
+    → VM args need to be selected seperately
+    
+- where are the artifacts managed by maven stored?
+    
+    `.m2` folder is the default folder used by maven to store its:
+    
+    - `settings.xml` file which specifies properties, like the central repository to download your dependencies, the location of the so-called `localRepository`
+    - by default, the `localRepository` in which maven stores all the dependencies your project might need to run.
+- ***JUnit Jupiter***
+    
+    **Unit Jupiter**
+     is the combination of the new [programming model](https://junit.org/junit5/docs/current/user-guide/#writing-tests)
+     and [extension model](https://junit.org/junit5/docs/current/user-guide/#extensions)
+     for writing tests and extensions in JUnit 5. The Jupiter sub-project provides a `TestEngine`
+     for running Jupiter based tests on the platform.
+    
+- IRC
+    
+    > `Internet Relay Chat (IRC) is a protocol for live interactive Internet text messaging (chat) or synchronous conferencing. It is mainly designed for group communication in discussion forums, called channels, but also allows one-to-one communication via private message as well as chat and data transfer, including file sharing.`
+    > 
+    
+    [Every Programmer should use IRC](https://www.fizerkhan.com/blog/posts/every-programmer-should-use-irc)
+    
+- PMD
+    
+    Simply put, PMD is **a source code analyzer to find common programming flaws like unused variables, empty catch blocks, unnecessary object creation, and so forth**. It supports Java, JavaScript, Salesforce.com Apex, PLSQL, Apache Velocity, XML, XSL.
+    
+
+- git - merge branch into master
+    
+    If you want to merge your branch to master on remote, follow the below steps:
+    
+    1. push your branch say 'br-1' to remote using `git push origin br-1`.
+    2. switch to master branch on your local repository using `git checkout master`.
+    3. update local master with remote master using `git pull origin master`.
+    4. merge br-1 into local master using `git merge br-1`. This may give you conflicts which need to be resolved and changes committed before moving further.
+    5. Once merge of br-1 to master on local is committed, push local master to remote master using `git push origin master`.
+- git - add file to commit after git commit
+    
+    ```
+    # edited file-that-i-remember.txt
+    git add file-that-i-remember.txt
+    git commit
+    
+    # realize you forgot a file
+    git add file-that-i-forgot.txt
+    git commit --amend --no-edit
+    ```
+    
+- git push
+- git - revert changes to last commit
+    
+    This will undo any changes you've made to tracked files and restore deleted files:
+    
+    `git reset HEAD --hard`   (head am Ende?)
+    
+- Taenzer Tipp - how to merge changes
+    
+    create new local branch
+    merge remote master into new local - see if worked
+    if so - merge that back into remote master
+    
+
+git clone (beim ersten Mal)
+
+git checkout -b branchName //neuer lokaler branch 
+
+// make changes 
+
+git add —all 
+
+git commit -m “message” 
+
+git push origin branchName  
