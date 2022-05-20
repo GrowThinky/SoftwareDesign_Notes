@@ -5,65 +5,6 @@ If you reuse code, you'll save a load,
 but if you reuse design, your future will shine.
 ```
 
-- UML
-    
-    ![https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Uml_classes_en.svg/300px-Uml_classes_en.svg.png](https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Uml_classes_en.svg/300px-Uml_classes_en.svg.png)
-    
-    - Durchgezogener Pfeil A→B  Assoziation (A kennt B; kann Operationen darauf ausführen) = "entspricht in der Implementierung einem **Feld**."
-    - Gestrichelter Pfeil - - → Assoziation durch Erzeugung.
-    - Aggregation vs Composition: Agg kann einzeln oder als Aggregat existieren: Composition kann nur als Teil des Ganzen existieren.
-    - Aggregation vs. Associacion: **Aggregation describes a special type of an association which specifies a whole and part relationship.** **Association is a relationship between two classes where one class uses another**.
-    
-    [UML Association vs Aggregation vs Composition](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-aggregation-vs-composition/)
-    
-- **when to use dependency, aggregation and association**
-    
-    **Dependency** is the most abstract among all 
-    relationships. Between 2 classes it only means that one is somehow 
-    "aware" ot another. Example: An object of a class A receives a reference
-     to an object of the class B (during some method execution) and do 
-    something with it (like calling its method). 
-    **Usage** is a special type of dependency and means that class A uses class B.
-    
-    **Association** is somehow stronger relationship than 
-    dependency. Example: A class a has a member (attribute) of class B and 
-    permanently holds this reference. The difference from the previous 
-    example is that this link is long-term, versus short-term link expressed
-     through dependency.
-    
-    **Agregation** and **compositions** are 
-    also associations, but stronger ones. Their semantics depends on the 
-    implementation language or context. 
-    Agregation is a non-exclusive relationship of the type Group-Member 
-    (several Members belog to the same group and can also belong to other 
-    groups). When Group is destroyd - Members are just unasigned from it and
-     not destroyd.
-    Composition is exclusive and very strong relationship: Whole-part. Part 
-    is under total control of Whole - is practically part of it. Without the
-     Whole, the Part does not exist, so when the whole is destroyed, the 
-    Part will die as well.
-    
-- Scrum
-    
-    Meeting → Sprint → Meeting
-    
-    development cycle: {
-    
-    planning, 
-    
-    requirements analysis, 
-    
-    design, 
-    
-    coding, 
-    
-    unit testing
-    
-    }
-    
-    → acceptance testing when a working product is demonstrated to stakeholders.
-    
-
 - Immutable Objects in Java
     
     An object is considered *immutable* if its state cannot change 
@@ -1710,3 +1651,61 @@ Metrics
 - ~~Warum ist if else nicht .... ?~~
     
     Ist nicht objektorientiert sondern imperativ. If else von der Anwendbarkeit von Strategy Pattern.
+    
+    - UML
+    
+    ![https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Uml_classes_en.svg/300px-Uml_classes_en.svg.png](https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Uml_classes_en.svg/300px-Uml_classes_en.svg.png)
+    
+    - Durchgezogener Pfeil A→B  Assoziation (A kennt B; kann Operationen darauf ausführen) = "entspricht in der Implementierung einem **Feld**."
+    - Gestrichelter Pfeil - - → Assoziation durch Erzeugung.
+    - Aggregation vs Composition: Agg kann einzeln oder als Aggregat existieren: Composition kann nur als Teil des Ganzen existieren.
+    - Aggregation vs. Associacion: **Aggregation describes a special type of an association which specifies a whole and part relationship.** **Association is a relationship between two classes where one class uses another**.
+    
+    [UML Association vs Aggregation vs Composition](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-aggregation-vs-composition/)
+    
+- **when to use dependency, aggregation and association**
+    
+    **Dependency** is the most abstract among all 
+    relationships. Between 2 classes it only means that one is somehow 
+    "aware" ot another. Example: An object of a class A receives a reference
+     to an object of the class B (during some method execution) and do 
+    something with it (like calling its method). 
+    **Usage** is a special type of dependency and means that class A uses class B.
+    
+    **Association** is somehow stronger relationship than 
+    dependency. Example: A class a has a member (attribute) of class B and 
+    permanently holds this reference. The difference from the previous 
+    example is that this link is long-term, versus short-term link expressed
+     through dependency.
+    
+    **Agregation** and **compositions** are 
+    also associations, but stronger ones. Their semantics depends on the 
+    implementation language or context. 
+    Agregation is a non-exclusive relationship of the type Group-Member 
+    (several Members belog to the same group and can also belong to other 
+    groups). When Group is destroyd - Members are just unasigned from it and
+     not destroyd.
+    Composition is exclusive and very strong relationship: Whole-part. Part 
+    is under total control of Whole - is practically part of it. Without the
+     Whole, the Part does not exist, so when the whole is destroyed, the 
+    Part will die as well.
+    
+- Scrum
+    
+    Meeting → Sprint → Meeting
+    
+    development cycle: {
+    
+    planning, 
+    
+    requirements analysis, 
+    
+    design, 
+    
+    coding, 
+    
+    unit testing
+    
+    }
+    
+    → acceptance testing when a working product is demonstrated to stakeholders.
