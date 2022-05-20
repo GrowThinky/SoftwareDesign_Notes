@@ -1,0 +1,13 @@
+We want to make a copy of an object. 
+
+Problems: 
+
+- some fields might be private, and therefore not accessible from the outside.
+- we have to know the object’s class, so our code becomes dependent on it.
+- sometimes we might not know the concrete object, but only the interface it follows.
+
+Solution:
+
+→ wir delegieren die Aufgabe des Klonens an das zu klonende Objekt selbst. 
+
+“Prototypen” Objekte (die geklont werden sollen) implementieren alle ein Interface welches eine clone() Methode zur Verfügung stellt.
