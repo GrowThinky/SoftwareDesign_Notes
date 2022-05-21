@@ -1,4 +1,4 @@
-# Notes I've taken for CS classes, recently.
+# Notes I've taken for CS
 
 ## Softwaredesign 
 Talks about OOP design patterns as well as some general principles for high quality code. 
